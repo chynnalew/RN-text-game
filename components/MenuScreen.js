@@ -7,8 +7,8 @@ const MenuScreen = () => {
     return(
         <SafeAreaView style={styles.container}>
             <View style={styles.textWrap}>
-                <Text style={[styles.title, styles.text]}>The game title goes here</Text>
-                <Text style={[styles.description, styles.text]}>A game where you do stuff and things</Text>
+                <Text style={[styles.title, styles.text]}>The Warehouse</Text>
+                <Text style={[styles.description, styles.text]}>A text based choose your own adventure</Text>
             </View>
             <View style={styles.buttonWrap}>
                 <Button style={[styles.buttonStart, styles.button, styles.text]} title="Start" onPress={goToGame}/>
@@ -16,7 +16,7 @@ const MenuScreen = () => {
                 <Button style={[styles.button, styles.text]} title="About" onPress= {goToAbout}/>
             </View>
             <View style={styles.footer}>
-                <Text style={[styles.text, styles.footerText]}>By me | For you | Copyright something</Text>
+                <Text style={[styles.text, styles.footerText]}>Story by: Kevin Reesor | App by: Chynna Lew</Text>
             </View>
         </SafeAreaView>
     )

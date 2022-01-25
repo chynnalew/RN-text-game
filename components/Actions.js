@@ -25,11 +25,23 @@ export const goToPage1b = () => {
 export const goToPage2 = () => {
     Actions.page2()
 }
+export const goToPage2a = () => {
+    Actions.page2a()
+}
+export const goToPage2b = () => {
+    Actions.page2b()
+}
+export const goToPage2c = () => {
+    Actions.page2c()
+}
 export const goToPage3 = () => {
     Actions.page3()
 }
 export const goToPage4 = () => {
     Actions.page4()
+}
+export const goToPage4a = () => {
+    Actions.page4a()
 }
 export const goToPage5 = () => {
     Actions.page5()
