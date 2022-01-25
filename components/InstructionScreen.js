@@ -1,16 +1,13 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text, Button} from 'react-native';
-import {Actions} from 'react-native-router-flux';
+import {goToMenu} from './Actions';
 
 const InstructionsScreen = () => {
-    const goBack = () => {
-        Actions.menu()
-    }
 
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>InstructionsScreen page</Text>
-            <Button style={[styles.text, styles.button]} title='Go Back' onPress={goBack}/>
+            <Button style={[styles.text, styles.button]} title='Go Back' onPress={goToMenu}/>
         </SafeAreaView>
     )
 }

@@ -1,14 +1,8 @@
 import React from 'react';
 import {Keyboard, SafeAreaView, StyleSheet, Text, Button, TextInput} from 'react-native';
-import {Actions} from 'react-native-router-flux';
+import {goToPage1, goToMenu} from './Actions';
 
 const CharacterCreate = (props) => {
-    const goBack = () => {
-        Actions.menu()
-    }
-    const cont = () => {
-        Actions.page1()
-    }
 
     return(
         <SafeAreaView style={styles.container}>
@@ -20,8 +14,8 @@ const CharacterCreate = (props) => {
                 onChangeText={props.onChangeName}
                 defaultValue={props.playerName}
             />
-            <Button style={[styles.text, styles.button]} title='Continue' onPress={cont}/>
-            <Button style={[styles.text, styles.button]} title='Go Back' onPress={goBack}/>
+            <Button style={[styles.text, styles.button]} title='Continue' onPress={goToPage1}/>
+            <Button style={[styles.text, styles.button]} title='Go Back' onPress={goToMenu}/>
         </SafeAreaView>
     )
 }

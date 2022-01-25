@@ -1,17 +1,9 @@
 import React from 'react';
 import {StyleSheet, Text, View, SafeAreaView, Button} from 'react-native';
-import {Actions} from 'react-native-router-flux';
+import {goToGame, goToInstructions, goToAbout} from './Actions';
 
 const MenuScreen = () => {
-    const goToGame= () => {
-        Actions.game()
-    }
-    const goToInstructions = () => {
-        Actions.instructions()
-    }
-    const goToAbout = () => {
-        Actions.about()
-    }
+  
     return(
         <SafeAreaView style={styles.container}>
             <View style={styles.textWrap}>
