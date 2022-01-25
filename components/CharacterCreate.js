@@ -1,14 +1,28 @@
 import React from 'react';
-import {View, Text, Button} from 'react-native';
-import {Action} from 'react-native-router-flux';
+import {SafeAreaView, StyleSheet, Text, Button} from 'react-native';
+import {Actions} from 'react-native-router-flux';
 
 const CharacterCreate = () => {
+    const goBack = () => {
+        Actions.menu()
+    }
+
     return(
-        <View>
-            <Text>Instructions page</Text>
-            <Button title='Go Back' onPress={goBack}/>
-        </View>
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}>CharacterCreation page</Text>
+            <Button style={[styles.text, styles.button]} title='Go Back' onPress={goBack}/>
+        </SafeAreaView>
     )
 }
+
+const styles = StyleSheet.create({
+    container:{
+        flex: 1,
+        backgroundColor:'#000',
+    },
+    text:{
+        color:'#fff'
+    }
+})
 
 export default CharacterCreate;
