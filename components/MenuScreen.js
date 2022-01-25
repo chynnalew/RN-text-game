@@ -3,8 +3,8 @@ import {StyleSheet, Text, View, SafeAreaView, Button} from 'react-native';
 import {Actions} from 'react-native-router-flux';
 
 const MenuScreen = () => {
-    const goToCharacter = () => {
-        Actions.character()
+    const goToGame= () => {
+        Actions.game()
     }
     const goToInstructions = () => {
         Actions.instructions()
@@ -19,7 +19,7 @@ const MenuScreen = () => {
                 <Text style={[styles.description, styles.text]}>A game where you do stuff and things</Text>
             </View>
             <View style={styles.buttonWrap}>
-                <Button style={[styles.buttonStart, styles.button, styles.text]} title="Start" onPress={goToCharacter}/>
+                <Button style={[styles.buttonStart, styles.button, styles.text]} title="Start" onPress={goToGame}/>
                 <Button style={[styles.button, styles.text]} title="How to Play" onPress={goToInstructions}/>
                 <Button style={[styles.button, styles.text]} title="About" onPress= {goToAbout}/>
             </View>
