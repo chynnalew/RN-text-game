@@ -6,6 +6,9 @@ const CharacterCreate = (props) => {
     const goBack = () => {
         Actions.menu()
     }
+    const cont = () => {
+        Actions.page1()
+    }
 
     return(
         <SafeAreaView style={styles.container}>
@@ -17,6 +20,7 @@ const CharacterCreate = (props) => {
                 onChangeText={props.onChangeName}
                 defaultValue={props.playerName}
             />
+            <Button style={[styles.text, styles.button]} title='Continue' onPress={cont}/>
             <Button style={[styles.text, styles.button]} title='Go Back' onPress={goBack}/>
         </SafeAreaView>
     )
