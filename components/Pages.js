@@ -265,9 +265,9 @@ export const page13 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                You look around the room, trying to find a place to hide, but there aren't any good options. You hear voices getting louder til they're right outside the door. You scramble towards a rack of lab coats in the corner of the room, barely squeezing behind it as the door opens. Two men enter, heading straight towards your hiding spot. One of the men grabs the lab coat in front of you. You make awkward eye contact as his puts the coat on. Before either of you can react, the other man grabs you. Everything goes black.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Wake up!' style={[styles.text, styles.button]} onPress={goToPage11}/>
         </SafeAreaView>
     )
 }
