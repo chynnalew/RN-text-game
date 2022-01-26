@@ -3,7 +3,6 @@ import {StyleSheet, Text, View, SafeAreaView, Button} from 'react-native';
 import {goToGame, goToInstructions, goToAbout} from './Actions';
 
 const MenuScreen = () => {
-  
     return(
         <SafeAreaView style={styles.container}>
             <View style={styles.textWrap}>
@@ -30,6 +29,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     text:{
+        fontFamily: 'monospace',
         color: 'white',
         
     },
@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 30,
         marginTop: 100,
-        marginBottom: 40
+        marginBottom: 40,
+        fontFamily: 'DirtyEgo'
     },
     description:{
         fontSize: 20,
