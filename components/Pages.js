@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, SafeAreaView, StyleSheet, Text} from 'react-native';
-import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage6a, goToPage6b, goToPage7, goToPage8, goToPage8a, goToPage9, goToPage10 ,goToPage11, goToPage12,  goToPage13, goToPage14, goToPage15, goToPage16, goToPage17, goToPage18, goToPage19, goToPage20} from './Actions';
+import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage6a, goToPage6b, goToPage7, goToPage8, goToPage8a, goToPage9, goToPage10 ,goToPage11, goToPage11a, goToPage12,  goToPage13, goToPage14, goToPage15, goToPage16, goToPage17, goToPage18, goToPage19, goToPage20} from './Actions';
 
 
 export const page1 = () => {
@@ -232,9 +232,20 @@ export const page11 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-                
+                Your vision slowly swims into focus. The room is at an odd angle, and you realize you're strapped to a board tilted upright. You can't move your arms or legs, but you do have a little bit of head movement. You look down and gasp. You're stripped down to your underwear and your skin is glowing blue. The floor in front of you is cracked, snarled blue roots grow out of the cracks, glowing with the same blue luminosity. You hear the door creak open.  
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Look at the door' style={[styles.text, styles.button]} onPress={goToPage11a}/>
+        </SafeAreaView>
+    )
+}
+
+export const page11a = () => {
+    return(
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}>
+                Two men enter the room, pushing a metal cart. The blue glow on their skin make your stomach drop. One of the men is wearing a doctor's coat, medical mask, and goggles. The cart is full of medical instruments. As you try to break free of the shackles, one of the men firmly holds your head still as the other grabs a scalpel from the cart. Your body feels hot as the knife cuts deep into your chest. The man picks up the end of the blue floor root, guiding it towards the incision. Then the root jumps to life, forcing itself into your chest. You black out, feeling the life slip from your body.
+            </Text>
+            <Button title='Try again' style={[styles.text, styles.button]} onPress={goToMenu}/>
         </SafeAreaView>
     )
 }
@@ -243,9 +254,9 @@ export const page12 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+            With great pain and difficulty, you remove the metal from your foot. You reach up, grabbing the lip of the dumpster. Despite the pain, you are eventually able to make it to the top of the dumpster and fall out. You limp about, only to discover each end of the alley is gated off. There's no way you can climb it with your injury. The only other exit is a door leading back into the building you just jumped from.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Go through the door' style={[styles.text, styles.button]} onPress={goToPage2a}/>
         </SafeAreaView>
     )
 }
