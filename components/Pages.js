@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, SafeAreaView, StyleSheet, Text} from 'react-native';
-import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage6a, goToPage6b, goToPage7, goToPage8, goToPage8a, goToPage9, goToPage10 ,goToPage11, goToPage11a, goToPage12,  goToPage13, goToPage14, goToPage15, goToPage16, goToPage17, goToPage18, goToPage19, goToPage20} from './Actions';
+import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage6a, goToPage6b, goToPage7, goToPage8, goToPage8a, goToPage9, goToPage10 ,goToPage11, goToPage11a, goToPage12,  goToPage13, goToPage14, goToPage14a, goToPage14b, goToPage15, goToPage16, goToPage17, goToPage18, goToPage19, goToPage20} from './Actions';
 
 
 export const page1 = () => {
@@ -276,9 +276,33 @@ export const page14 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                You open the wooden door, exposing what appears to be living quarters. There are four beds along the left wall, each with their own footlocker at the base. Other than that, the room is empty. You check the contents of the lockers: shoes, clothes, romance novels, nothing out of the ordinary. As you turn to leave the room, you see a huge cavernous hole in the opposite wall, exposing a long glowing tunnel. How did you miss that? The voices in the hallway grow louder. They must be right outside the room.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Go down the tunnel' style={[styles.text, styles.button]} onPress={goToPage14a}/>
+            <Button title='Leave the room' style={[styles.text, styles.button]} onPress={goToPage14b}/>
+        </SafeAreaView>
+    )
+}
+
+export const page14a = () => {
+    return(
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}>
+                The tunnel walls are covered with glowing blue plants. Their roots snaking around the tunnel walls and ceiling. As you make your way down the path, the plants pulsate and sway in the still air around you. You come to a split in the path. Both passages look identical.
+            </Text>
+            <Button title='Go Left' style={[styles.text, styles.button]} onPress={goToPage15}/>
+            <Button title='Go Right' style={[styles.text, styles.button]} onPress={goToPage18}/>
+        </SafeAreaView>
+    )
+}
+
+export const page14b = () => {
+    return(
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}>
+                Despite the voices clearly indicating people are right outside the door, you confidently swing it open. Two men, pushing a cart, turn to look at you. YOu barely have time to notice their glowing blue skin before they lunge at you, shoving you to the ground. You hit your head on the concrete and everything goes black.
+            </Text>
+            <Button title='Wake Up!' style={[styles.text, styles.button]} onPress={goToPage11}/>
         </SafeAreaView>
     )
 }

@@ -85,6 +85,12 @@ export const goToPage13 = () => {
 export const goToPage14 = () => {
     Actions.page14()
 }
+export const goToPage14a = () => {
+    Actions.page14a()
+}
+export const goToPage14b = () => {
+    Actions.page14b()
+}
 export const goToPage15 = () => {
     Actions.page15()
 }
