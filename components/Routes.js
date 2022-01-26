@@ -4,7 +4,7 @@ import MenuScreen from './MenuScreen';
 import Game from  './Game';
 import InstructionScreen from './InstructionScreen';
 import About from './About';
-import {page1, page1a, page1b, page2, page2a, page2b, page2c, page3, page4, page4a, page5, page6, page6a, page6b, page7, page8, page8a, page9, page10, page11, page11a, page12, page13, page14, page14a, page14b, page15, page16, page17, page18, page19, page20} from './Pages';
+import {page1, page1a, page1b, page2, page2a, page2b, page2c, page3, page4, page4a, page5, page6, page6a, page6b, page7, page8, page8a, page9, page10, page11, page11a, page12, page13, page14, page14a, page14b, page15, page16, page17, page18, page18a, page18b, page19, page20} from './Pages';
 
 const Routes = () => {
     return(
@@ -44,6 +44,8 @@ const Routes = () => {
                 <Scene key='page16' component={page16} title="Page 16"/>
                 <Scene key='page17' component={page17} title="Page 17"/>
                 <Scene key='page18' component={page18} title="Page 18"/>
+                <Scene key='page18a' component={page18a} title="Page 18"/>
+                <Scene key='page18b' component={page18b} title="Page 18"/>
                 <Scene key='page19' component={page19} title="Page 19"/>
                 <Scene key='page20' component={page20} title="Page 20"/>
             </Scene>

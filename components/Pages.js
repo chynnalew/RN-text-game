@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, SafeAreaView, StyleSheet, Text} from 'react-native';
-import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage6a, goToPage6b, goToPage7, goToPage8, goToPage8a, goToPage9, goToPage10 ,goToPage11, goToPage11a, goToPage12,  goToPage13, goToPage14, goToPage14a, goToPage14b, goToPage15, goToPage16, goToPage17, goToPage18, goToPage19, goToPage20} from './Actions';
+import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage6a, goToPage6b, goToPage7, goToPage8, goToPage8a, goToPage9, goToPage10 ,goToPage11, goToPage11a, goToPage12,  goToPage13, goToPage14, goToPage14a, goToPage14b, goToPage15, goToPage16, goToPage17, goToPage18, goToPage18a, goToPage18b, goToPage19, goToPage20} from './Actions';
 
 
 export const page1 = () => {
@@ -311,7 +311,7 @@ export const page15 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-                You head down the left path. To your surprise, the tunnel opens up into a huge cavern with a 10ft wide stream running through it. As you approach the stream, a foul smell hits you. You think this may be a sewer leak, but the scent is oddly... metallic. When you reach the bank it's clear this isn't water. The liquid is a deep red color. The sides of the stream where the liquid has dried are covered in a sticky, tar-like, black goo. Your current path continues on the other side of the stream. The stream has carved a tunnel through the cavern wall.
+                You head down the left path. To your surprise, the tunnel opens up into a huge cavern with a 10ft wide stream running through it. As you approach the stream, a foul smell hits you. You think this may be a sewer leak, but the scent is oddly... meaty. When you reach the bank it's clear this isn't water. The liquid is a deep red color. The sides of the stream where the liquid has dried are covered in a sticky, tar-like, black goo. Your current path continues on the other side of the stream. The stream has carved a tunnel through the cavern wall.
             </Text>
             <Button title='Cross to continue down the path' style={[styles.text, styles.button]} onPress={goToPage16}/>
             <Button title='Follow the stream' style={[styles.text, styles.button]} onPress={goToPage17}/>
@@ -353,13 +353,49 @@ export const page17a = () => {
     )
 }
 
+export const page17b = () => {
+    return(
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}>
+                Last page
+            </Text>
+            <Button title='The End' style={[styles.text, styles.button]} onPress={goToPage17b}/>
+        </SafeAreaView>
+    )
+}
+
 export const page18 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+            You head down the right path, the tunnel narrowing as you go. You get to a point where the tunnel is so small you are on all fours trying to get through. As the tunnel narrowed the glowing blue that has lit the way has been dimming. Now, as you combat crawl on further, it is totally black. After a while in the dark, you feel the cave floor moisten. Along with the moisture comes a disgusting, sweet, meaty smell. The moisture dries on you, forming an uncomfortable sticky goo.
+            Eventually, the tunnel begins to light up again. You notice that the goo is the blackest thing you have ever seen. The moisture you encountered in the tunnel is a deep blood red.
+            The tunnel opens up to a sharp drop. Beyond the drop is a huge open cave containing a  snarled, sharp, glowing, blue root ball. The smallest roots must be a few feet in diameter. Whatever plant these roots belong to must be gigantic. There are cracks in the cavern walls above you, that you might be able to squeeze through.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Look around' style={[styles.text, styles.button]} onPress={goToPage18a}/>
+            <Button title='Go Back' style={[styles.text, styles.button]} onPress={goToPage18b}/>
+        </SafeAreaView>
+    )
+}
+export const page18a = () => {
+    return(
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}>
+            You stand at the edge of the drop off. Beyond the drop is a huge open cave containing a  snarled, sharp, glowing, blue root ball. The smallest roots must be a few feet in diameter. Whatever plant these roots belong to must be gigantic. You notice signs of a recent rockslide. Giant cracks snake up the cavern walls and natural debris slope down, creating a path from the drop off to the cavern below.
+            </Text>
+            <Button title='Climb up' style={[styles.text, styles.button]} onPress={goToPage19}/>
+            <Button title='Go down into the cavern' style={[styles.text, styles.button]} onPress={goToPage20}/>
+        </SafeAreaView>
+    )
+}
+export const page18b = () => {
+    return(
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}>
+            You make your way back down the tunnel with ease, finding yourself at a familiar crossroads.
+            </Text>
+            <Button title='Go Left' style={[styles.text, styles.button]} onPress={goToPage15}/>
+            <Button title='Go Right' style={[styles.text, styles.button]} onPress={goToPage18}/>
         </SafeAreaView>
     )
 }
