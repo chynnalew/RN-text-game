@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, SafeAreaView, StyleSheet, Text} from 'react-native';
-import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage6a, goToPage6b, goToPage7, goToPage8, goToPage8a, goToPage9, goToPage10 ,goToPage11, goToPage11a, goToPage12,  goToPage13, goToPage14, goToPage14a, goToPage14b, goToPage15, goToPage16, goToPage17, goToPage18, goToPage18a, goToPage18b, goToPage19, goToPage20} from './Actions';
+import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage6a, goToPage6b, goToPage7, goToPage8, goToPage8a, goToPage9, goToPage10 ,goToPage11, goToPage11a, goToPage12,  goToPage13, goToPage14, goToPage14a, goToPage14b, goToPage15, goToPage16, goToPage17, goToPage17a, goToPage17b, goToPage18, goToPage18a, goToPage18b, goToPage19, goToPage19a, goToPage20} from './Actions';
 
 
 export const page1 = () => {
@@ -357,9 +357,9 @@ export const page17b = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-                Last page
+                Last page follow
             </Text>
-            <Button title='The End' style={[styles.text, styles.button]} onPress={goToPage17b}/>
+            <Button title='The End' style={[styles.text, styles.button]} onPress={goToMenu}/>
         </SafeAreaView>
     )
 }
@@ -404,9 +404,21 @@ export const page19 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                As you climb up the wall, you can see a small opening above you. The rocks shift under your weight, but you persevere on up, climbing into a cramped tunnel. Ahead you see a light, but not the kind you’ve been seeing a lot of. No, this is golden sunlight. The warmth hits your skin and an intense feeling of relief washes over you. Looking around, you see a small grouping of dilapidated warehouses in the distance, surrounded by empty tundra. 
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Get out of here' style={[styles.text, styles.button]} onPress={goToPage19a}/>
+        </SafeAreaView>
+    )
+}
+
+export const page19a = () => {
+    return(
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}>
+                Which way is home? How did you get here? Where were you taken? 
+                But no matter. Heading of in any direction is fine so long as it’s away from that warehouse.
+            </Text>
+            <Button title='The End' style={[styles.text, styles.button]} onPress={goToMenu}/>
         </SafeAreaView>
     )
 }
@@ -415,9 +427,9 @@ export const page20 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                You head down the rock slide into the cavern. As you venture closer to the roots, you feel overwhelmed with a feeling of awe. You feel pulled towards th her pulsing blue light.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Go to her' style={[styles.text, styles.button]} onPress={goToPage17a}/>
         </SafeAreaView>
     )
 }

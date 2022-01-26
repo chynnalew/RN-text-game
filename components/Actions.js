@@ -100,6 +100,12 @@ export const goToPage16 = () => {
 export const goToPage17 = () => {
     Actions.page17()
 }
+export const goToPage17a = () => {
+    Actions.page17a()
+}
+export const goToPage17b = () => {
+    Actions.page17b()
+}
 export const goToPage18 = () => {
     Actions.page18()
 }
@@ -111,6 +117,9 @@ export const goToPage18b = () => {
 }
 export const goToPage19 = () => {
     Actions.page19()
+}
+export const goToPage19a = () => {
+    Actions.page19a()
 }
 export const goToPage20 = () => {
     Actions.page20()
