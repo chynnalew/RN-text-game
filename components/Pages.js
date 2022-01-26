@@ -311,9 +311,10 @@ export const page15 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                You head down the left path. To your surprise, the tunnel opens up into a huge cavern with a stream running through it. As you approach the stream, a foul smell hits you. You think this may be a sewer leak, but the scent is oddly... metallic. This isn't water. The liquid is a deep red color. The sides of the stream where the liquid has dried are covered in a sticky, tar-like, black goo.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Continue down the path' style={[styles.text, styles.button]} onPress={goToPage16}/>
+            <Button title='Follow the stream' style={[styles.text, styles.button]} onPress={goToPage17}/>
         </SafeAreaView>
     )
 }
