@@ -49,11 +49,20 @@ export const goToPage5 = () => {
 export const goToPage6 = () => {
     Actions.page6()
 }
+export const goToPage6a = () => {
+    Actions.page6a()
+}
+export const goToPage6b = () => {
+    Actions.page6b()
+}
 export const goToPage7 = () => {
     Actions.page7()
 }
 export const goToPage8 = () => {
     Actions.page8()
+}
+export const goToPage8a = () => {
+    Actions.page8a()
 }
 export const goToPage9 = () => {
     Actions.page9()

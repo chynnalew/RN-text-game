@@ -4,7 +4,7 @@ import MenuScreen from './MenuScreen';
 import Game from  './Game';
 import InstructionScreen from './InstructionScreen';
 import About from './About';
-import {page1, page1a, page1b, page2, page2a, page2b, page2c, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13, page14, page15, page16, page17, page18, page19, page20} from './Pages';
+import {page1, page1a, page1b, page2, page2a, page2b, page2c, page3, page4, page4a, page5, page6, page6a, page6b, page7, page8, page8a, page9, page10, page11, page12, page13, page14, page15, page16, page17, page18, page19, page20} from './Pages';
 
 const Routes = () => {
     return(
@@ -26,8 +26,11 @@ const Routes = () => {
                 <Scene key='page4a' component={page4a} title="Page 4a"/>
                 <Scene key='page5' component={page5} title="Page 5"/>
                 <Scene key='page6' component={page6} title="Page 6"/>
+                <Scene key='page6a' component={page6a} title="Page 6"/>
+                <Scene key='page6b' component={page6b} title="Page 6"/>
                 <Scene key='page7' component={page7} title="Page 7"/>
                 <Scene key='page8' component={page8} title="Page 8"/>
+                <Scene key='page8a' component={page8a} title="Page 8a"/>
                 <Scene key='page9' component={page9} title="Page 9"/>
                 <Scene key='page10' component={page10} title="Page 10"/>
                 <Scene key='page11' component={page11} title="Page 11"/>

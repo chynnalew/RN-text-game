@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, SafeAreaView, StyleSheet, Text} from 'react-native';
-import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage7, goToPage8, goToPage9, goToPage10 ,goToPage11, goToPage12,  goToPage13, goToPage14, goToPage15, goToPage16, goToPage17, goToPage18, goToPage19, goToPage20} from './Actions';
+import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage6a, goToPage6b, goToPage7, goToPage8, goToPage8a, goToPage9, goToPage10 ,goToPage11, goToPage12,  goToPage13, goToPage14, goToPage15, goToPage16, goToPage17, goToPage18, goToPage19, goToPage20} from './Actions';
 
 
 export const page1 = () => {
@@ -55,7 +55,7 @@ export const page2a = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-                As you walk down the hallway you notice walls are made of a dirty corrugated metal and the passage has no doors. At the end there are two stairways. 
+                You find yourself in a hallway. The walls are made of a dirty corrugated metal and the passage has no doors. At the end the hall forks into two stairways. 
             </Text>
             <Button title='Go to the Right' style={[styles.text, styles.button]} onPress={goToPage2b}/>
             <Button title='Go to the Left' style={[styles.text, styles.button]} onPress={goToPage2c}/>
@@ -66,9 +66,9 @@ export const page2b =() => {
     return(
         <SafeAreaView style = {styles.container}>
             <Text style={styles.text}>
-            You stand at the top of a rusty diamond plate staircase. The passage decends steeply down into darkness. You can't see what lies at the end. 
+            You stand at the top of a rusty diamond plate staircase. The passage descends steeply down into darkness. You can't see what lies at the end. 
             </Text>
-            <Button title='Go Back' style={[styles.text, styles.button]} onPress={goToPage2a}/>
+            <Button title='Go back to the fork in the hallway' style={[styles.text, styles.button]} onPress={goToPage2a}/>
             <Button title='Go Down the Dark Stairwell' style={[styles.text, styles.button]} onPress={goToPage5}/>
         </SafeAreaView>
     )
@@ -79,7 +79,7 @@ export const page2c =() => {
             <Text style={styles.text}>
             You can barely make out a doorway at at the end of the left stairs, faintly illuminated by fluorescent lights. You can hear the murmur of several voices in the distance. 
             </Text>
-            <Button title='Go Back' style={[styles.text, styles.button]} onPress={goToPage2a}/>
+            <Button title='Go back to the fork in the hallway' style={[styles.text, styles.button]} onPress={goToPage2a}/>
             <Button title='Go Towards the Voices' style={[styles.text, styles.button]} onPress={goToPage8}/>
         </SafeAreaView>
     )
@@ -123,9 +123,12 @@ export const page5 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                You head down the dark staircase. The air is getting cooler and you can hear your footsteps echoing around you. You've been walking for so long, you're sure you must be below the ground level. When you finally reach the end of the stairs, you find a hallway with various doors. The first door is made of a heavy metal. A little further down the hallway is a rundown looking wooden door.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Open the Metal Door' style={[styles.text, styles.button]} onPress={goToPage6}/>
+            <Button title='Open the Wooden Door' style={[styles.text, styles.button]} onPress={goToPage14}/>
+            <Button title='Go Back' style={[styles.text, styles.button]} onPress={goToPage4}/>
+
         </SafeAreaView>
     )
 }
@@ -134,9 +137,34 @@ export const page6 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                The door swings open smoothly, revealing a strange blue glow. You enter the room to see a large plant like  bio-luminescent organism growing in the center of the room. There's a work bench with various scientific and botany tools against the back wall.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Leave the Room' style={[styles.text, styles.button]} onPress={goToPage6a}/>
+            <Button title='Examine the work bench' style={[styles.text, styles.button]} onPress={goToPage6b}/>
+        </SafeAreaView>
+    )
+}
+export const page6a = () => {
+    return(
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}>
+                You stand in a cold hallway. To your right is a metal door. Further down the hallway is a wooden door. There are stairs behind you.
+            </Text>
+            <Button title='Open the metal door' style={[styles.text, styles.button]} onPress={goToPage6}/>
+            <Button title='Open the wooden door' style={[styles.text, styles.button]} onPress={goToPage14}/>
+            <Button title='Go Back up the Stairs' style={[styles.text, styles.button]} onPress={goToPage2a}/>
+        </SafeAreaView>
+    )
+}
+
+export const page6b = () => {
+    return(
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}>
+                You approach the table. It has various metal tools and jars strewn about. A glowing blue mortar and pestle catches your eye. It must have been used to grind up parts of the organism. There's a stack of papers on the opposite end of the table. 
+            </Text>
+            <Button title='Leave the room' style={[styles.text, styles.button]} onPress={goToPage6a}/>
+            <Button title='Look at the papers' style={[styles.text, styles.button]} onPress={goToPage7}/>
         </SafeAreaView>
     )
 }
@@ -145,9 +173,10 @@ export const page7 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+            While sciencey and indecipherable in many ways, the notes have a strange tone. There are logs of scientific tests on this plant, but they seem to speak of it in a reverential way. They don’t call it a plant - they don’t call it “it” either.... They refer to the glowing blue thing as “Her”. Maybe this scientist is a little too involved in his work, or maybe it’s a joke? You wonder who you’re dealing with. They must be the one’s who injured you and put you in that room. Your thoughts are interrupted by voices approaching from the stairwell.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Hide in the lab' style={[styles.text, styles.button]} onPress={goToPage13}/>
+            <Button title='Continue down the hallway' style={[styles.text, styles.button]} onPress={goToPage14}/>
         </SafeAreaView>
     )
 }
@@ -156,9 +185,22 @@ export const page8 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                You peak through the doorway to see a junk filled warehouse. As you creep through the room towards the voices, you smell burning and see a thick trail of smoke winding up, escaping the building through a large hole in the ceiling. You see four men, with their backs turned to you huddled around a fire in the center of the room.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Get a closer look' style={[styles.text, styles.button]} onPress={goToPage8a}/>
+            <Button title='Get out of here' style={[styles.text, styles.button]} onPress={goToPage2a}/>
+        </SafeAreaView>
+    )
+}
+
+export const page8a = () => {
+    return(
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}>
+                You slowly and silently move in to get a closer look at the men. You catch a glimpse of one of their faces. Much to your alarm, he, and the rest of the men seem to be.... glowing. A blue light emanates from their exposed skin. Who are these people? Are they even people?
+            </Text>
+            <Button title='Go back to the stairwell' style={[styles.text, styles.button]} onPress={goToPage2a}/>
+            <Button title='Get closer to hear their conversation' style={[styles.text, styles.button]} onPress={goToPage9}/>
         </SafeAreaView>
     )
 }
@@ -167,9 +209,10 @@ export const page9 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                You hide behind a box a few yards away from the men. It's difficult to hear, but you pick up on some sciency terms you don't understand. It's pretty clear they're taking about some kind of experiments. They often mention "her" and "her family"... Are they doing experiments on people? Is that why you were brought here? You can see a door past the men. You could try to get there, but the clutter is dense and the men might notice you.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Try to sneak past the men' style={[styles.text, styles.button]} onPress={goToPage10}/>
+            <Button title='Go back to the hallway' style={[styles.text, styles.button]} onPress={goToPage2a}/>
         </SafeAreaView>
     )
 }
@@ -178,9 +221,9 @@ export const page10 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                As you try to sneak by, you knock over a car door that was precariously perched atop a stack of boxes. You see it slip in slow motion and there’s nothing you can do. The sound is deafening. Within seconds the men from the fire descend upon you. You resist, but it is no use. They are unusually strong. They force something in your mouth and you black out.
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Wake up!' style={[styles.text, styles.button]} onPress={goToPage11}/>
         </SafeAreaView>
     )
 }
@@ -189,7 +232,7 @@ export const page11 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                
             </Text>
             <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
         </SafeAreaView>
