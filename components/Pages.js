@@ -311,9 +311,9 @@ export const page15 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-                You head down the left path. To your surprise, the tunnel opens up into a huge cavern with a stream running through it. As you approach the stream, a foul smell hits you. You think this may be a sewer leak, but the scent is oddly... metallic. This isn't water. The liquid is a deep red color. The sides of the stream where the liquid has dried are covered in a sticky, tar-like, black goo.
+                You head down the left path. To your surprise, the tunnel opens up into a huge cavern with a 10ft wide stream running through it. As you approach the stream, a foul smell hits you. You think this may be a sewer leak, but the scent is oddly... metallic. When you reach the bank it's clear this isn't water. The liquid is a deep red color. The sides of the stream where the liquid has dried are covered in a sticky, tar-like, black goo. Your current path continues on the other side of the stream. The stream has carved a tunnel through the cavern wall.
             </Text>
-            <Button title='Continue down the path' style={[styles.text, styles.button]} onPress={goToPage16}/>
+            <Button title='Cross to continue down the path' style={[styles.text, styles.button]} onPress={goToPage16}/>
             <Button title='Follow the stream' style={[styles.text, styles.button]} onPress={goToPage17}/>
         </SafeAreaView>
     )
@@ -323,9 +323,9 @@ export const page16 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                The stream is knee deep. You wade through with relative ease. What looked like solid ground is actually a thick layer of the black goo. It feels like it's getting thicker as you struggle to get back on the path. Before you know it, you've sunk down to your waist and the goo seems to be swirling and boiling around you.  It pulls you under, completely covering your face and cutting off your air supply. You lose your sense of direction as you wildly fight back to the surface. Your lungs burn and you slip out of consciousness as several hands grab your shoulders and pull you out of the goo. 
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Go to Page 11' style={[styles.text, styles.button]} onPress={goToPage11}/>
         </SafeAreaView>
     )
 }
@@ -334,9 +334,21 @@ export const page17 = () => {
     return(
         <SafeAreaView style={styles.container}>
             <Text style={styles.text}>
-
+                You avert your path and follow the stream. The air around the liquid is uncomfortably warm. You notice there aren't any of the blue plants in this tunnel. the darkness is unsettling, but you can see a glowing light in the distance. As you get closer, you can see the light is coming from a large cavern. You exit the tunnel, finding yourself in a huge open cave containing a  snarled, sharp, glowing, blue root ball. The smallest roots must be a few feet in diameter. Whatever plant these roots belong to must be gigantic. You stare at the pulsing mass in awe. How could something be so... beautiful. 
             </Text>
-            <Button title='Go to Page 1' style={[styles.text, styles.button]} onPress={goToPage1}/>
+            <Button title='Approach her' style={[styles.text, styles.button]} onPress={goToPage17a}/>
+        </SafeAreaView>
+    )
+}
+
+export const page17a = () => {
+    return(
+        <SafeAreaView style={styles.container}>
+            <Text style={styles.text}> 
+                You were so captivated by her glow that it took you a minute to notice several dozen people kneeling below her, all emanating the same blue light from their skin. You feel the urge to join them.
+                As you look back up at her you're overwhelmed with emotions. You can't look away - no - you won't look away. As you approach her, you are brought to your knees. The black goo cements you to the cavern floor.
+            </Text>
+            <Button title='...' style={[styles.text, styles.button]} onPress={goToPage17b}/>
         </SafeAreaView>
     )
 }
