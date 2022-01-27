@@ -7,7 +7,8 @@ const getFonts = () =>
 Font.loadAsync({
   dirtyEgo: require('./assets/fonts/DirtyEgo.ttf'),
   oregonBook: require('./assets/fonts/OregonLdoBook.ttf'),
-  oregonBold: require('./assets/fonts/OregonLdoBold-gxe6.ttf')
+  oregonBold: require('./assets/fonts/OregonLdoBold-gxe6.ttf'),
+  oregonEx: require('./assets/fonts/OregonLdoExtended-ALWm.ttf')
 });
 
 export default function App() {

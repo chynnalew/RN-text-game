@@ -29,8 +29,9 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     text:{
-        fontFamily: 'oregonBook',
+        fontFamily: 'oregonBold',
         color: 'white',
+        letterSpacing: 1,
         
     },
     textWrap: {
