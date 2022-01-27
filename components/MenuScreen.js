@@ -6,7 +6,7 @@ const MenuScreen = () => {
     return(
         <SafeAreaView style={styles.container}>
             <View style={styles.textWrap}>
-                <Text style={[styles.title, styles.text]}>The Warehouse</Text>
+                <Text style={[styles.text, styles.title]}>The Warehouse</Text>
                 <Text style={[styles.description, styles.text]}>A text based choose your own adventure</Text>
             </View>
             <View style={styles.buttonWrap}>
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     text:{
-        fontFamily: 'monospace',
+        fontFamily: 'oregonBook',
         color: 'white',
         
     },
@@ -37,10 +37,10 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     title: {
-        fontSize: 30,
+        fontSize: 50,
         marginTop: 100,
         marginBottom: 40,
-        fontFamily: 'DirtyEgo'
+        fontFamily: 'dirtyEgo'
     },
     description:{
         fontSize: 20,
