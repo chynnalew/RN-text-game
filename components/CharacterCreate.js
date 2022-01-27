@@ -1,5 +1,5 @@
 import React from 'react';
-import {Keyboard, SafeAreaView, StyleSheet, Text, Button, TextInput} from 'react-native';
+import {Keyboard, SafeAreaView, StyleSheet, Text, TouchableOpacity, TextInput} from 'react-native';
 import {goToPage1, goToMenu} from './Actions';
 import {Shared} from '../styles/index';
 
@@ -15,8 +15,12 @@ const CharacterCreate = (props) => {
                 onChangeText={props.onChangeName}
                 defaultValue={props.playerName}
             />
-            <Button style={[{...Shared.text}, {...Shared.button}]} title='Continue' onPress={goToPage1}/>
-            <Button style={[{...Shared.text}, {...Shared.button}]} title='Go Back' onPress={goToMenu}/>
+            <TouchableOpacity style={{...Shared.button}} onPress={goToPage1}>
+                <Text style={[{...Shared.text}]}>Continue</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={{...Shared.button}} onPress={goToMenu}>
+                <Text style={[{...Shared.text}]}>Go Back</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     )
 }

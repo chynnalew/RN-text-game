@@ -12,7 +12,6 @@ export const goToInstructions = () => {
 export const goToMenu = () => {
     Actions.menu()
 }
-
 export const goToPage1 = () => {
     Actions.page1()
 }

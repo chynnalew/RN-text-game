@@ -21,7 +21,8 @@ export const text = {
   fontFamily: 'oregonBold',
   color: 'white',
   fontSize: 20,
-  letterSpacing: 2
+  letterSpacing: 2,
+  marginBottom:10,
 }
 
 export const textSmall = {
@@ -29,4 +30,15 @@ export const textSmall = {
   color: 'white',
   fontSize: 10,
   letterSpacing: 2
+}
+
+export const button = {
+  paddingHorizontal:10,
+  paddingVertical:5,
+  margin: 10,
+  borderRadius:5,
+  borderColor:'gray',
+  backgroundColor:'grey',
+  justifyContent: 'center',
+  alignItems: 'center'
 }

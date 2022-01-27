@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View, SafeAreaView, Button} from 'react-native';
+import {StyleSheet, Text, View, SafeAreaView, TouchableOpacity, Button} from 'react-native';
 import {goToGame, goToInstructions, goToAbout} from './Actions';
 import {Shared} from '../styles/index'
 
@@ -11,9 +11,15 @@ const MenuScreen = () => {
                 <Text style={[styles.description, {...Shared.text}]}>A text based choose your own adventure</Text>
             </View>
             <View style={styles.buttonWrap}>
-                <Button style={[styles.buttonStart, styles.button, styles.text]} title="Start" onPress={goToGame}/>
-                <Button style={[{...Shared.text}, styles.button]} title="How to Play" onPress={goToInstructions}/>
-                <Button style={[{...Shared.text}, styles.button]} title="About" onPress= {goToAbout}/>
+                <TouchableOpacity style={{...Shared.button}} onPress={goToGame}>
+                    <Text style={[{...Shared.text}]}>Start</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{...Shared.button}} onPress={goToInstructions}>
+                    <Text style={[{...Shared.text}]}>Instructions</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{...Shared.button}} onPress={goToAbout}>
+                    <Text style={[{...Shared.text}]}>About</Text>
+                </TouchableOpacity>
             </View>
             <View style={styles.footer}>
                 <Text style={[{...Shared.textSmall}, styles.footerText]}>Story by: Kevin Reesor | App by: Chynna Lew</Text>
@@ -41,7 +47,7 @@ const styles = StyleSheet.create({
     buttonWrap: {
         flex: 1,
         justifyContent: 'space-between',
-        marginTop: 100,
+        marginTop: 50,
         marginBottom:100
     }
 });

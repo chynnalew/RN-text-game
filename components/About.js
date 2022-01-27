@@ -1,17 +1,16 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text, Button} from 'react-native';
+import {SafeAreaView, TouchableOpacity, StyleSheet, Text, Button} from 'react-native';
 import {Shared} from '../styles/index';
-import {Actions} from 'react-native-router-flux';
+import {goToMenu} from './Actions';
 
 const About = () => {
-    const goBack = () => {
-        Actions.menu()
-    }
 
     return(
         <SafeAreaView style={{...Shared.container}}>
             <Text style={{...Shared.text}}>About page</Text>
-            <Button style={[{...Shared.text}, {...Shared.button}]} title='Go Back' onPress={goBack}/>
+            <TouchableOpacity style={{...Shared.button}} onPress={goToMenu}>
+                <Text style={[{...Shared.text}]}>Go Back</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     )
 }

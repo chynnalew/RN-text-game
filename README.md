@@ -24,7 +24,7 @@ A choose your own adventure game. Escape from the warehouse! Story by Kevin Rees
 * open Expo Go on your device and scan the qr code in the terminal to open the application.
 
 ## Known Bugs
-* none
+* tested on ios, android expo incompatible with react-native-router-flux
 
 ## License
 [MIT](https://opensource.org/licenses/MIT) 2021
