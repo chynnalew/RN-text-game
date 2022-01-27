@@ -1,5 +1,6 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text, Button} from 'react-native';
+import {Shared} from '../styles/index';
 import {Actions} from 'react-native-router-flux';
 
 const About = () => {
@@ -8,21 +9,10 @@ const About = () => {
     }
 
     return(
-        <SafeAreaView style={styles.container}>
-            <Text style={styles.text}>About page</Text>
-            <Button style={[styles.text, styles.button]} title='Go Back' onPress={goBack}/>
+        <SafeAreaView style={{...Shared.container}}>
+            <Text style={{...Shared.text}}>About page</Text>
+            <Button style={[{...Shared.text}, {...Shared.button}]} title='Go Back' onPress={goBack}/>
         </SafeAreaView>
     )
 }
-
-const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        backgroundColor:'#000',
-    },
-    text:{
-        color:'#fff'
-    }
-})
-
 export default About;

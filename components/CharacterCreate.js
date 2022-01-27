@@ -1,31 +1,27 @@
 import React from 'react';
 import {Keyboard, SafeAreaView, StyleSheet, Text, Button, TextInput} from 'react-native';
 import {goToPage1, goToMenu} from './Actions';
+import {Shared} from '../styles/index';
 
 const CharacterCreate = (props) => {
 
     return(
-        <SafeAreaView style={styles.container}>
-            <Text style={[styles.text, styles.title]}>Create Your Character</Text>
-            <Text style={[styles.text, styles.inputText]}>Name</Text>
+        <SafeAreaView style={{...Shared.container}}>
+            <Text style={[{...Shared.text}, styles.title]}>Create Your Character</Text>
+            <Text style={[{...Shared.text}, styles.inputText]}>Name</Text>
             <TextInput
                 style={styles.input}
                 maxLength={50}
                 onChangeText={props.onChangeName}
                 defaultValue={props.playerName}
             />
-            <Button style={[styles.text, styles.button]} title='Continue' onPress={goToPage1}/>
-            <Button style={[styles.text, styles.button]} title='Go Back' onPress={goToMenu}/>
+            <Button style={[{...Shared.text}, {...Shared.button}]} title='Continue' onPress={goToPage1}/>
+            <Button style={[{...Shared.text}, {...Shared.button}]} title='Go Back' onPress={goToMenu}/>
         </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        alignItems: 'center',
-        backgroundColor:'#000',
-    },
     input:{
         backgroundColor:'#fff',
         margin: 5,
@@ -35,12 +31,10 @@ const styles = StyleSheet.create({
     inputText:{
         fontSize: 20,
     },
-    text:{
-        color:'#fff'
-    },
     title:{
         fontSize: 30,
-        marginBottom: 10,
+        marginBottom: 50,
+        fontFamily: 'dirtyEgo'
     }
 })
 
