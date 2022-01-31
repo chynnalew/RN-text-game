@@ -3,7 +3,6 @@ import {Button, SafeAreaView, StyleSheet, Text, TouchableOpacity} from 'react-na
 import {Shared} from '../styles/index';
 import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage6a, goToPage6b, goToPage7, goToPage8, goToPage8a, goToPage9, goToPage10 ,goToPage11, goToPage11a, goToPage12,  goToPage13, goToPage14, goToPage14a, goToPage14b, goToPage15, goToPage16, goToPage17, goToPage17a, goToPage17b, goToPage18, goToPage18a, goToPage18b, goToPage19, goToPage19a, goToPage20} from './Actions';
 
-
 export const page1 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -20,7 +19,6 @@ export const page1 = () => {
         </SafeAreaView>
     )
 }
-
 export const page1a = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -36,7 +34,6 @@ export const page1a = () => {
         </SafeAreaView>
     )
 }
-
 export const page1b = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -52,7 +49,6 @@ export const page1b = () => {
         </SafeAreaView>
     )
 }
-
 export const page2 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -65,7 +61,6 @@ export const page2 = () => {
         </SafeAreaView>
     )
 }
-
 export const page2a = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -111,7 +106,6 @@ export const page2c =() => {
         </SafeAreaView>
     )
 }
-
 export const page3 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -127,7 +121,6 @@ export const page3 = () => {
         </SafeAreaView>
     )
 }
-
 export const page4 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -140,7 +133,6 @@ export const page4 = () => {
         </SafeAreaView>
     )
 }
-
 export const page4a = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -153,7 +145,6 @@ export const page4a = () => {
         </SafeAreaView>
     )
 }
-
 export const page5 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -172,7 +163,6 @@ export const page5 = () => {
         </SafeAreaView>
     )
 }
-
 export const page6 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -206,7 +196,6 @@ export const page6a = () => {
         </SafeAreaView>
     )
 }
-
 export const page6b = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -222,7 +211,6 @@ export const page6b = () => {
         </SafeAreaView>
     )
 }
-
 export const page7 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -238,7 +226,6 @@ export const page7 = () => {
         </SafeAreaView>
     )
 }
-
 export const page8 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -254,7 +241,6 @@ export const page8 = () => {
         </SafeAreaView>
     )
 }
-
 export const page8a = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -270,7 +256,6 @@ export const page8a = () => {
         </SafeAreaView>
     )
 }
-
 export const page9 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -286,7 +271,6 @@ export const page9 = () => {
         </SafeAreaView>
     )
 }
-
 export const page10 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -299,7 +283,6 @@ export const page10 = () => {
         </SafeAreaView>
     )
 }
-
 export const page11 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -312,7 +295,6 @@ export const page11 = () => {
         </SafeAreaView>
     )
 }
-
 export const page11a = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -325,7 +307,6 @@ export const page11a = () => {
         </SafeAreaView>
     )
 }
-
 export const page12 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -338,7 +319,6 @@ export const page12 = () => {
         </SafeAreaView>
     )
 }
-
 export const page13 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -351,7 +331,6 @@ export const page13 = () => {
         </SafeAreaView>
     )
 }
-
 export const page14 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -367,7 +346,6 @@ export const page14 = () => {
         </SafeAreaView>
     )
 }
-
 export const page14a = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -383,7 +361,6 @@ export const page14a = () => {
         </SafeAreaView>
     )
 }
-
 export const page14b = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -396,7 +373,6 @@ export const page14b = () => {
         </SafeAreaView>
     )
 }
-
 export const page15 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -412,7 +388,6 @@ export const page15 = () => {
         </SafeAreaView>
     )
 }
-
 export const page16 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -425,7 +400,6 @@ export const page16 = () => {
         </SafeAreaView>
     )
 }
-
 export const page17 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -452,7 +426,6 @@ export const page17a = () => {
         </SafeAreaView>
     )
 }
-
 export const page17b = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -465,7 +438,6 @@ export const page17b = () => {
         </SafeAreaView>
     )
 }
-
 export const page18 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -513,7 +485,6 @@ export const page18b = () => {
         </SafeAreaView>
     )
 }
-
 export const page19 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -526,7 +497,6 @@ export const page19 = () => {
         </SafeAreaView>
     )
 }
-
 export const page19a = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
@@ -540,7 +510,6 @@ export const page19a = () => {
         </SafeAreaView>
     )
 }
-
 export const page20 = () => {
     return(
         <SafeAreaView style={{...Shared.container}}>
