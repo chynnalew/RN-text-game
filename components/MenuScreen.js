@@ -12,7 +12,7 @@ const MenuScreen = () => {
                 </View>
                 <View style={styles.buttonWrap}>
                     <TouchableOpacity style={{...Shared.button}} onPress={goToGame}>
-                        <Text style={[{...Shared.text}]}>Start</Text>
+                        <Text style={[{...Shared.text}, {...Shared.buttonText}]}>Start</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={{...Shared.button}} onPress={goToInstructions}>
                         <Text style={[{...Shared.text}]}>Instructions</Text>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         textShadowColor: 'black',
         textShadowOffset: {width: -1, height: 1},
         textShadowRadius: 10,
-        backgroundColor: '#0007'
+        backgroundColor: '#0009'
     },
     buttonWrap: {
         flex: 1,

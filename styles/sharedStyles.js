@@ -33,12 +33,15 @@ export const textSmall = {
 }
 
 export const button = {
-  paddingHorizontal:10,
-  paddingVertical:5,
-  margin: 10,
-  borderRadius:5,
-  borderColor:'gray',
-  backgroundColor:'grey',
+  borderWidth: 1,
+  padding:2,
+  paddingTop: 12,
+  margin:10,
+  width: 200,
   justifyContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
+  alignSelf: 'center',
+  backgroundColor: '#46464680',
+  borderRadius: 5,
+
 }
