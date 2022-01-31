@@ -5,7 +5,7 @@ import {Shared} from '../styles/index'
 const MenuScreen = () => {
     return(
         <SafeAreaView style={{...Shared.titleContainer}}>
-            <ImageBackground source={require('../assets/img/warehouse.jpeg')} resizeMode='cover' style={styles.background}> 
+            <ImageBackground source={require('../assets/img/warehouse.png')} resizeMode='cover' style={styles.background}> 
                 <View style={styles.textWrap}>
                     <Text style={[{...Shared.text}, styles.title]}>The Warehouse</Text>
                     <Text style={[styles.description, {...Shared.text}]}>A text based choose your own adventure</Text>
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     buttonWrap: {
         flex: 1,
         justifyContent: 'space-between',
-        marginTop: 50,
+        marginTop: 20,
         marginBottom:100
     },
     background: {
