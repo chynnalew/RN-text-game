@@ -1,5 +1,5 @@
 import React from 'react';
-import {Dimensions, StyleSheet, Text, View, SafeAreaView, TouchableOpacity, Button, ImageBackground} from 'react-native';
+import {Animated, Dimensions, StyleSheet, Text, View, SafeAreaView, TouchableOpacity, Button, ImageBackground} from 'react-native';
 import {goToGame, goToInstructions, goToAbout} from './Actions';
 import {Shared} from '../styles/index'
 const MenuScreen = () => {

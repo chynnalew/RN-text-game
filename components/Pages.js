@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, SafeAreaView, StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {Animated, Button, SafeAreaView, StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {Shared} from '../styles/index';
 import {goToMenu, goToPage1, goToPage1a, goToPage1b, goToPage2, goToPage2a, goToPage2b, goToPage2c, goToPage3, goToPage4, goToPage4a, goToPage5, goToPage6, goToPage6a, goToPage6b, goToPage7, goToPage8, goToPage8a, goToPage9, goToPage10 ,goToPage11, goToPage11a, goToPage12,  goToPage13, goToPage14, goToPage14a, goToPage14b, goToPage15, goToPage16, goToPage17, goToPage17a, goToPage17b, goToPage18, goToPage18a, goToPage18b, goToPage19, goToPage19a, goToPage20} from './Actions';
 

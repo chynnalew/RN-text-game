@@ -22,7 +22,7 @@ export const text = {
   color: 'white',
   fontSize: 20,
   letterSpacing: 2,
-  marginBottom:10,
+  padding:10
 }
 
 export const textSmall = {
@@ -35,9 +35,8 @@ export const textSmall = {
 export const button = {
   borderWidth: 1,
   padding:2,
-  paddingTop: 12,
   margin:10,
-  width: 200,
+  minWidth: 200,
   justifyContent: 'center',
   alignItems: 'center',
   alignSelf: 'center',
