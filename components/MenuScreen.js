@@ -1,10 +1,10 @@
 import React from 'react';
-import {Animated, Dimensions, StyleSheet, Text, View, SafeAreaView, TouchableOpacity, Button, ImageBackground} from 'react-native';
+import {Animated, Dimensions, StyleSheet, Text, View, TouchableOpacity, Button, ImageBackground} from 'react-native';
 import {goToGame, goToInstructions, goToAbout} from './Actions';
 import {Shared} from '../styles/index'
 const MenuScreen = () => {
     return(
-        <SafeAreaView style={{...Shared.titleContainer}}>
+        <View style={{...Shared.titleContainer}}>
             <ImageBackground source={require('../assets/img/warehouse.png')} resizeMode='cover' style={styles.background}> 
                 <View style={styles.textWrap}>
                     <Text style={[{...Shared.text}, styles.title]}>The Warehouse</Text>
@@ -25,7 +25,7 @@ const MenuScreen = () => {
                     <Text style={[{...Shared.textSmall}, styles.footerText]}>Story by: Kevin Reesor | App by: Chynna Lew</Text>
                 </View>
             </ImageBackground>
-        </SafeAreaView>
+        </View>
     )
 }
 

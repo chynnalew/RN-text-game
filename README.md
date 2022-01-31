@@ -1,5 +1,5 @@
 # The Warehouse
-### A text based choose your own adventure game
+### A text based choose your own adventure game, for iOS
 #### By: Chynna Lew
 
 <hr/>
@@ -13,7 +13,7 @@
 <hr/>
 
 ## Description
-A choose your own adventure game. Escape from the warehouse! Story by Kevin Reesor, created with React Native.
+A choose your own adventure game. Escape from the warehouse! Story by Kevin Reesor, created with React Native. Created for iOS
 ## Setup/Installation Requirements
 * Expo is required to run this application. Follow the setup instructions [here](https://docs.expo.dev/)
 
