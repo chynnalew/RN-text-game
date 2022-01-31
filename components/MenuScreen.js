@@ -1,11 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, View, SafeAreaView, TouchableOpacity, Button, ImageBackground} from 'react-native';
+import {Dimensions, StyleSheet, Text, View, SafeAreaView, TouchableOpacity, Button, ImageBackground} from 'react-native';
 import {goToGame, goToInstructions, goToAbout} from './Actions';
 import {Shared} from '../styles/index'
 const MenuScreen = () => {
     return(
         <SafeAreaView style={{...Shared.titleContainer}}>
-            <ImageBackground source={require('../assets/img/warehouse.jpeg')} resizeMode='cover' style= {styles.background}> 
+            <ImageBackground source={require('../assets/img/warehouse.jpeg')} resizeMode='cover' style={styles.background}> 
                 <View style={styles.textWrap}>
                     <Text style={[{...Shared.text}, styles.title]}>The Warehouse</Text>
                     <Text style={[styles.description, {...Shared.text}]}>A text based choose your own adventure</Text>
@@ -32,6 +32,7 @@ const MenuScreen = () => {
 const styles = StyleSheet.create({
     textWrap: {
         flex: 1,
+        
     },
     title: {
         fontSize: 50,
@@ -44,6 +45,10 @@ const styles = StyleSheet.create({
         maxWidth: '60%',
         alignSelf: 'center',
         textAlign: 'center',
+        textShadowColor: 'black',
+        textShadowOffset: {width: -1, height: 1},
+        textShadowRadius: 10,
+        backgroundColor: '#0007'
     },
     buttonWrap: {
         flex: 1,
@@ -54,6 +59,10 @@ const styles = StyleSheet.create({
     background: {
         flex: 1,
         justifyContent: 'center',
+        width: Dimensions.get('window').width, 
+        height: Dimensions.get('window').height, 
+        position: 'absolute', top: 0, left: 0,
+        alignItems: 'center'
 
     }
 });
